@@ -1,0 +1,36 @@
+.home-background {
+    background-image: url('/public/images/sunflower.jpg');
+    /* Update this path with your image location */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+}
+
+.home-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black with 50% opacity */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    max-width: 100%;
+}
+
+.home-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-overlay p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.logo>img {
+    width: 150px;
+}

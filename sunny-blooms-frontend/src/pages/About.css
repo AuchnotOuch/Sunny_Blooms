@@ -1,0 +1,76 @@
+.about-background {
+    background-image: url('/public/images/pinkflowers.jpg');
+    /* Update with your image path */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black with 50% opacity */
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    width: 100%;
+    color: white;
+}
+
+.main-about-section {
+    margin-bottom: 2rem;
+}
+
+.main-about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.main-about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.owners-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.owner-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.owner-section:last-child {
+    margin-right: 0;
+}
+
+.owner-portrait {
+    width: 150px;
+    height: 225px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.owner-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.owner-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
