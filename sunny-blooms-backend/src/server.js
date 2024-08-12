@@ -40,7 +40,7 @@ app.use('/api/flowers', flowerRoutes);
 app.use('/api/contact', contactRoutes);
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '../sunny-blooms-frontend/build/index.html'));
+    res.sendFile(path.join(__dirname + '../../sunny-blooms-frontend/build/index.html'));
 });
 // Start server
 const PORT = process.env.PORT || 5000;
