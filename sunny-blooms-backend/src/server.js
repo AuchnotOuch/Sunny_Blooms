@@ -20,9 +20,12 @@ const app = express();
 app.use(
     helmet.contentSecurityPolicy({
         directives: {
-            defaultSrc: ["'self'"],
-            styleSrc: ["'self'", "https://fonts.googleapis.com"],
-            fontSrc: ["'self'", "https://fonts.gstatic.com"],
+            defaultSrc: ["'self'", "https:"],
+            styleSrc: ["'self'", "https:", "'unsafe-inline'"],
+            fontSrc: ["'self'", "https:", "data:"],
+            scriptSrc: ["'self'", "https:"],
+            imgSrc: ["'self'", "https:", "data:"],
+            connectSrc: ["'self'", "https:"],
         },
     })
 );
