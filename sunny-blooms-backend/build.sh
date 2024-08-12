@@ -15,5 +15,5 @@ cd ..
 echo "Installing backend dependencies..."
 cd sunny-blooms-backend
 npm install
-
+cd ..
 echo "Build and installation complete."
