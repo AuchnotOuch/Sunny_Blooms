@@ -2,6 +2,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import helmet from 'helmet'
 
 import flowerRoutes from './routes/flowers.js';
 import contactRoutes from './routes/contact.js';
@@ -11,7 +12,15 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(express.json());
+app.use(
+    helmet.contentSecurityPolicy({
+        directives: {
+            defaultSrc: ["'self'"],
+            styleSrc: ["'self'", "https://fonts.googleapis.com"],
+            fontSrc: ["'self'", "https://fonts.gstatic.com"],
+        },
+    })
+);
 
 // Database connection
 mongoose.connect(process.env.MONGO_URI, {
